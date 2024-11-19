@@ -1,16 +1,19 @@
+
+
 const Canvas = ({ width, height }) => {
-	return (
-		<canvas
-			width={width}
-			height={height}
-			style={canvasStyle}
-		/>
-	)
+  const localCanvasStyle = {
+    border: "1px solid black",
+  }
+  return (
+    <canvas
+      id="canvas"
+      width={width}
+      height={height}
+      style={localCanvasStyle}
+    />
+  )
 }
 
-const canvasStyle = {
-	border: "1px solid black"
-}
 
 export default Canvas;
 
